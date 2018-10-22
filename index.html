@@ -1,0 +1,121 @@
+<!-- Document type = "HTML" -->
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+</head>
+
+<body onload="startTime();" id = "body-main">
+
+    <img src = "images/wh.png"  id = "weather-icon">   
+
+    <!-- ####################### WEATHER WIDGET START ########################### -->
+    <div id = "weather-widget">
+
+    </div>
+    <!-- WEATHER END -->
+
+    <!-- ####################### TIME START ########################### --> 
+    <div class="columns">
+        <div class="column">
+            <div id = "time-display">
+
+            </div>
+        </div>
+        <!-- TIME END -->
+
+        <!-- ####################### FORM START ########################### -->   
+        <div class="column">
+            <div id = "form-display">
+                <h1> What is your name? </h1>
+                <div id = "input-name">
+                    <input type="text" id = "name" > 
+                </div>
+
+            </div>
+        </div>
+        <!-- FORM END -->
+        <div class="column">
+            <div id ="input-focus" >
+                <h2> What is your main focus for today? </h2>
+                <input type="text" id = "focus">
+            </div>
+        </div>
+
+        <!-- ############## DISPLAY FOCUS ################### -->
+        <div class="column">
+            <div id  = "display-focus" >  
+                <h2 class = "bold-t">Today</h2>
+                <div class ="div-center">
+                    <h2  id = "focus-val" class = "div-inline"></h2>
+                    <img id ="delete-img" src = "images/cross.png" class = "img-delete">
+                </div>
+            </div>
+        </div>
+
+<!-- ######################## END FOCUS ############################# -->
+
+        <!-- FLOATING ACTION BUTTON FOR TODO LIST -->
+        <div class="fixed-action-btn">
+
+            <a class="btn-floating btn-large red" id="todo-btn">
+                <i class="large material-icons">  <img src = "images/todo2.png" class="img-todo-btn">   </i>
+            </a>
+        </div>
+    </div>
+    <!-- ################################   TO DO MODAL START -------#####################------->
+    <div class="modal modal-toto-1" onload="getToDo()" id = "modal-todo">
+        
+       
+
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Todo List</p>
+                <button class="delete" aria-label="close" id = "close-m"></button>
+            </header>
+            <section class="modal-card-body">
+                <div id="wrapper"> 
+
+                    <div id="yourdiv"> 
+                        <form id="todolist">
+                            <input type="text" name="todo" Placeholder="Add your todo here...." id="todobox"> <br />
+                            <input id="submit" type="submit" value="Add" class ="input-submit" />
+                        </form>
+                        <div id="ShowToDoList">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button" id = "close-modal">Close</button>
+            </footer>
+        </div>
+    </div>
+	
+	<div id = "qt">
+	<p id = "qt-p"> hello </p>
+	</div>
+    <!-- ################################## TO DO MODAL END ############################  -->
+</body>
+
+</html>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
+<script
+    src="js/javaScript.js">
+
+</script>

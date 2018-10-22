@@ -1,0 +1,223 @@
+
+::-webkit-scrollbar {
+    display: none;
+}
+body { 
+    width : 100%;
+    height : 100%;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment:fixed;
+    overflow: hidden;
+
+}
+
+#weather-widget
+{
+    width:30%;
+    height: 60%;
+    display: none;
+    margin-right:20px;
+    margin-top: 30px;
+    margin-right: 10px;
+    float: right;
+}
+#time-display
+{
+    font-size: 160px;
+    color:white;
+    text-align: center;
+    display: none;
+    position: absolute;
+    font-family: apple-system,BlinkMacSystemFont,"Neue Haas Grotesk Text Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    top: 52%;
+    left: 50%;
+    width:80%;
+    line-height: 60px;
+    transform: translate(-50%, -70%); 
+}
+input
+{
+    margin: 0 auto;
+    display: block;
+    align-content: center;
+    width: 30%;
+    height: 10%;
+    font-size: 50px;
+    outline: 0;
+    text-align: center;
+    color: white;
+    background: transparent;
+
+}
+#input-focus
+{
+    position: absolute;
+    top: 60%;
+    display: none;
+    left: 50%;
+    width:50%;
+
+    transform: translate(-50%, -50%);
+}
+#display-focus
+{
+    position: absolute;
+    top: 60%;
+    display: none;
+    left: 50%;
+    width:80%;
+    transform: translate(-50%, -50%);
+}
+#qt
+{
+    text-align: center;
+    display: none;
+    position: absolute;
+    font-size:18px;
+    font-family: apple-system,BlinkMacSystemFont,"Neue Haas Grotesk Text Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    top: 85%;
+    color:white;
+    left: 50%;
+    width:80%;
+    font-style: italic;
+    line-height: 40px;
+    transform: translate(-50%, -10%);
+}
+#form-display
+{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width:60%;
+    transform: translate(-50%, -50%);  
+}
+
+h1
+{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+}
+h2
+{
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+    font-size: 40px;
+    padding :10px;
+}
+del{
+    color:white;
+}
+#weather-icon
+{
+    width:100px; 
+    height:100px;
+    float: right;
+}
+.goodm
+{
+    font-family: 'Muli', sans-serif;
+    font-size: 50px;
+    font-weight:bold;
+    padding: 20px;
+}
+#focus
+{
+    height: 60px;
+    font-size: 50px;
+    border-bottom : 2px solid white;
+}
+
+#name
+{
+    height: 60px;
+    font-size: 40px;
+    border-bottom : 2px solid white;
+}
+
+
+#wrapper{
+    width: 100%;
+    height: 60%;
+    float: right;
+    backface-visibility: hidden;
+}
+
+#header{
+    border-bottom:1px solid rgb(217, 217, 217);
+    background: white;
+    padding: 10px;
+}
+
+#yourdiv{
+    padding: 20px;
+    background: white;
+}
+
+#footer{
+    border-top:1px solid rgb(217, 217, 217);
+    background: white;
+    padding: 10px;
+}
+
+
+input[type=submit]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 20px;
+    background-color: #699DB6;
+    border: none;
+    color: white;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+.bold-t
+{
+    font-weight: bold;
+}
+.div-center
+{
+    text-align:center;
+}
+.div-inline
+{
+    display: inline;
+    font-size:60px;
+}
+.img-delete
+{
+    width: 35px; 
+    height:35px;
+    margin-left: 10px;
+}
+.img-todo-btn
+{
+    width:100%;
+    height:100%; 
+    float: right;
+}
+
+.modal-todo-1
+{
+    display: none; 
+    background:none; 
+    opacity:10 !important;
+    box-shadow:none; 
+    -webkit-box-shadow : none;
+}
+#todobox
+{
+    color:black;  
+}
+.input-submit
+{
+    width:80px; height: 35px; font-size: 15px; border-radius: 20px;
+}
